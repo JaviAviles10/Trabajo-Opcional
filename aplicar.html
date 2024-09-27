@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Aplicación</title>
+    <link rel="stylesheet" href="css/estilo.css"> 
+</head>
+<body>
+    <div class="form-aplicar">
+        <h2>Formulario de Aplicación</h2>
+        <form action="aplicar.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div class="form-group">
+                <label for="carnet">Carnet:</label>
+                <input type="text" id="carnet" name="carnet" required>
+            </div>
+
+            <div class="form-group">
+                <label for="departamento">Departamento de residencia:</label>
+                <select id="departamento" name="departamento" required>
+                    <option value="">Seleccione un departamento</option>
+                    <option value="Ahuachapán">Ahuachapán</option>
+                    <option value="Santa Ana">Santa Ana</option>
+                    <option value="Sonsonate">Sonsonate</option>
+                    <option value="La Libertad">La Libertad</option>
+                    <option value="San Salvador">San Salvador</option>
+                    <option value="Cuscatlán">Cuscatlán</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Cabañas">Cabañas</option>
+                    <option value="San Vicente">San Vicente</option>
+                    <option value="Usulután">Usulután</option>
+                    <option value="San Miguel">San Miguel</option>
+                    <option value="La Unión">La Unión</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+                <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
+            </div>
+
+            <div class="form-group">
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="Ingeniería de Software y Negocios Digitales">Ingeniería de Software y Negocios Digitales</option>
+                    <option value="Ingeniería de Negocios">Ingeniería de Negocios</option>
+                    <option value="Licenciatura en Economía y Negocios">Licenciatura en Economía y Negocios</option>
+                    <option value="Licenciatura en Ciencias Jurídicas">Licenciatura en Ciencias Jurídicas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="salario">Pretensión salarial:</label>
+                <input type="number" id="salario" name="salario" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn">Aplicar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
